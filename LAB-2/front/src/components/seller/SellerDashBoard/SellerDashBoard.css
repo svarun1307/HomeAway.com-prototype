@@ -1,0 +1,62 @@
+
+.sellerWelcom
+{
+    text-align: center;
+    margin-top : 80px;
+}
+
+.sellerWelcom i
+{
+    font-size: 150px;
+    color : #3f51b5;
+}
+
+.headerFont
+{
+    font-family: "ffont","Roboto",Arial,sans-serif;
+    font-size: 14px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.goToButton
+{
+    font-weight: bold !important;
+    background: #296ebb;
+}
+
+.smallDesc
+{
+    margin-top : 20px;
+}
+
+.redirector
+{
+    color: rgba(0, 0, 0, 0.87);
+    height: 24px;
+    overflow: hidden;
+    font-size: 1rem;
+    box-sizing: content-box;
+    font-weight: 400;
+    line-height: 1.5em;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-right: 16px;
+}
+
+.redirector:hover
+{
+    color: rgba(0, 0, 0, 0.87);
+    height: 24px;
+    overflow: hidden;
+    font-size: 1rem;
+    box-sizing: content-box;
+    font-weight: 400;
+    line-height: 1.5em;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-right: 16px;
+    text-decoration: none !important;
+}

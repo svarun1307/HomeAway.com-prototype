@@ -1,0 +1,71 @@
+.mybookingsheader
+{
+    text-align: center;
+}
+
+.sy-pager
+{
+    display: none !important;
+}
+
+.qnsprop
+{
+    text-align: center;
+}
+
+.qnBox
+{
+    
+    border-radius: 3px;
+    padding: 0px;
+    padding-bottom:15px;
+    margin-bottom : 10px;
+}
+
+.qnBox .panel-heading
+{
+    padding: 10px;
+    background: #f6f7f8;
+    
+}
+
+.qnBox .panel-body
+{
+    padding: 5px;
+}
+
+.askedat
+{
+    font-family: Lato;
+    color: #212529;
+    font-weight: 500;
+}
+
+.msgbox
+{
+    background: #d9dbde;
+    padding: 5px;
+    font-family: Lato;
+    color: #2e3236;
+    font-weight: 700;
+}
+
+
+.svbtn
+{
+    color: white;
+    font-family: Lato;
+    font-weight: 500;
+    text-align: center;
+}
+
+.msgansbox
+{
+    padding: 0px;
+}
+
+.msgansbox > textarea , .svbtn
+{
+    margin-top : 10px;
+}
+

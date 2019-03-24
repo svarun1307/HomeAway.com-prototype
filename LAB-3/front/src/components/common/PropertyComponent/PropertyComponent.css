@@ -1,0 +1,146 @@
+.propertyBox
+{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0 0 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.1);
+    overflow: hidden;
+    position: relative;
+    -webkit-transform: perspective(100px);
+    transform: perspective(100px);
+    transition: -webkit-transform .25s;
+    transition: transform .25s;
+    transition: transform .25s,-webkit-transform .25s;
+    background: #fff;
+    cursor: pointer;
+}
+
+.amenitiesUL
+{
+    padding-left: 0;
+    list-style-type: disc;
+}
+
+li.propertyBriefs
+{
+    padding-right: 30px;
+    display: inline;
+    position: relative;
+    color : rgb(50, 63, 77);
+    font-family: Lato,Roboto,Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-size: 17px;
+}
+
+li.propertyBriefs.afterBox:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #d3d8de;
+    border-radius: 50%;
+    right: 10px;
+    top: 8px;
+}
+
+.boxHeader
+{
+    margin-top : 17px;
+    font-family: Lato,Roboto,Arial,Helvetica Neue,Helvetica,sans-serif;
+    margin-bottom : 8px;
+}
+
+
+.propertyImages
+{
+    height: 250px !important;
+    min-height: 250px !important;
+    max-height: 250px !important;
+
+
+}
+
+.leftImageHalf
+{
+    padding: 0px;
+    position: relative;
+    max-height: 250px !important;
+    min-height: 250px !important;
+}
+
+.sy-box
+{
+    height: 250px !important;
+    min-height: 250px !important;
+    max-height: 250px !important;
+}
+
+.rightInfoHalf
+{
+    padding-left: 30px;
+}
+
+.mainOuterContainer
+{
+    padding-bottom: 100px;
+    padding-top : 60px;
+}
+
+.bottomPrices
+{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    bottom: 0px;
+    height: 45px;
+    background: #f6f7f8;
+    left: 0px;
+    padding-left: 20px;
+    line-height: 45px;
+}
+
+.currencyBox,.currencyBox2
+{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.extraDet:nth-of-type(odd)
+{
+    background: #f6f7f8;
+}
+
+.extraDet:nth-of-type(even)
+{
+    background: white;
+}
+
+.bookPageDetailsLeft
+{
+    font-weight: 500;
+    font-family: 'Roboto','Arial','Helvetica Neue',Helvetica,sans-serif;
+}
+
+.bookPageDetailsRight
+{
+    font-family: Lato, Roboto !important;
+    font-size: 16px;
+    color: #353e44;
+    font-weight: 300;
+}
+
+.bookPageDetails
+{
+    padding: 10px;
+    /*background: #f6f7f8;*/
+}
+
+.bookhistory
+{
+    font-family: Lato;
+    text-align: center; 
+    width: 100%;
+    padding: 10px;
+    text-decoration: underline;
+}

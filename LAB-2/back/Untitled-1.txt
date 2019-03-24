@@ -1,0 +1,243 @@
+Node API wORK:
+----------------
+
+1) Add Property  -----
+2) Login validate -----
+3) User signup   ----
+4) User Details  ---- 
+5) Update Profile With Image --- 
+6) Update Profile Without Image ----
+7) Logout User ------
+8) Search Data  ------
+9) Get Full Property Details -----
+10) Get Single Property Image  -----
+11) Make Booking   ------ (??)
+12) Seller Booking ***LFET
+13) Traveller Booking ***LFET
+14) Public Profiles   ------
+
+
+Front Work:
+------------------
+1) ask qn UI
+2) Redux Everywhere
+3) Set Ask qN FIELDS FROM REDUX
+4) Toggle q and ans FIELDS
+5) Filters UI change
+
+
+
+Left In MIDDLE tasks:
+------------------------
+
+1)  Get nd display questions 
+for both seller and owner and save again
+2) 
+
+
+
+
+
+Kafka Routes Done
+---------------------
+
+1) User signup
+2) userDetails ( Image part is left)
+3) Search Data Done
+
+
+
+
+
+
+SELECT `id` FROM `bookings` WHERE `property_id`='"+propertyID+"' 
+AND (('"+startDate+"'<=`startBook` AND '"+endDate+"'<=`endBook` AND '"+endDate+"'>=`startBook`)  
+OR ('"+startDate+"'>=`startBook` AND '"+endDate+"'>=`endBook` AND '"+startDate+"'<=`endBook` )   
+OR ('"+startDate+"'>=`startBook` AND '"+endDate+"'<=`endBook`))";   
+
+
+/****************
+ * 
+ * 
+ * UPDATE PROFILE WITHOUT IMAGE FOR DETAILS PAGE IN THE DASHBOARD
+ * 
+ * 
+ * ************** */
+async function executeAsyncQueryMongo(mdb1,mdb2,mdb3){
+
+    //console.log(mdb1);
+    console.log(mdb2);
+    if(mdb3 == 'find')
+    {
+        /************SELECT QUERY*************** */
+        return new Promise(function(resolve, reject) {
+            mdb1.find( mdb2 , function(err,user){
+                if (err) 
+                {
+                    reject(err);
+                }
+                else
+                {
+                    resolve(user);
+                }
+            })
+        });
+    }
+    else if(mdb3 == 'insert')
+    {
+        /*************INSERT 1 QUERY****************** */
+        return new Promise(function(resolve, reject) {
+            mdb1.save().then((data,doc,count)=>{
+                console.log(data);
+                console.log(doc);
+                console.log(count);
+                resolve(data);
+            },(err)=>{
+                reject(err);
+            })
+  
+        });
+    }
+
+
+
+} 921
+
+
+
+/**************************************/
+
+/****************
+ * 
+ * 
+ * ASYNC QUERY METHOD FOR MYSQL
+ * 
+ * 
+ * ************** */
+
+async function executeAsyncQuery(q){
+
+    return new Promise(function(resolve, reject) {
+        dbconn.query(q,function(err,response,fields){
+            console.log(response);
+            if(err)
+            {
+                reject(err);
+            }
+            else 
+            {
+                resolve(response);
+            }
+        });
+    });
+} 
+
+
+/****************
+ * 
+ * 
+ * ASYNC QUERY METHOD FOR MONGODB 
+ * 
+ * 
+ * ************** */
+
+
+
+async function executeAsyncQueryMongo(mdb1,mdb2,mdb3,mdb4 = {}){
+
+    //console.log(mdb1);
+    //console.log(mdb2);
+    if(mdb3 == 'find')
+    {
+        /************SELECT QUERY*************** */
+        return new Promise(function(resolve, reject) {
+            mdb1.find( mdb2 , mdb4 , function(err,user){
+                if (err) 
+                {
+                    reject(err);
+                }
+                else
+                {
+                    resolve(user);
+                }
+            })
+        });
+    }
+    else if(mdb3 == 'insert')
+    {
+        /*************INSERT QUERY****************** */
+        return new Promise(function(resolve, reject) {
+            mdb1.save().then((data,doc,count)=>{
+                console.log(data);
+                console.log(doc);
+                console.log(count);
+                resolve(data);
+            },(err)=>{
+                reject(err);
+            })
+  
+        });
+    }
+    else if(mdb3 == 'update')
+    {
+        /*************UPDATE QUERY****************** */
+        return new Promise(function(resolve, reject) {
+            mdb1.updateMany(mdb2,mdb4).then((data,doc,count)=>{
+                resolve(data);
+            },(err)=>{
+                reject(err);
+            })
+  
+        });
+    }
+    else if(mdb3 == 'aggregate')
+    {
+        return mdb1.find(mdb2, {}).sort(mdb4['sort']).skip(mdb4['skip']).limit(mdb4['limit']).exec();
+    }
+
+
+} 
+
+
+
+
+var getAllImagesOfProperty = function(y){
+  console.log(y);
+  let imageArray = [];
+  let s = " SELECT * FROM `property_images` WHERE `property_id`='"+y+"' AND `name`!='' ";
+  console.log(s);
+  dbconn.query(s,function(err,response,fields){
+      if(err)
+      {
+          imageArray = [];
+          return imageArray;
+      }
+      else
+      {
+          console.log(response);
+          let o = response.length;
+          for(var m = 0 ;  m < o ; m++)
+          {
+              try
+              {
+                  var file = response[m]["path"];
+                  console.log(file);
+                  var fileLocation = path.join(__dirname + '/uploads',file);
+                  var img = fs.readFileSync(fileLocation);
+                  var base64img = new Buffer(img).toString('base64');
+                  //console.log(base64img);
+                  imageArray[m] = base64img;
+              }
+              catch(w)
+              {
+                imageArray[m] = '';
+                console.log(w);
+              }
+          }
+          return imageArray;
+      }
+
+    });
+
+}
+

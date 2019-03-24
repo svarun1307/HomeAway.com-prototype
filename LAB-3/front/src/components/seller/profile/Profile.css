@@ -1,0 +1,250 @@
+.imageHolder
+{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.containerBox
+{
+    padding-top : 20px;
+    padding-bottom: 20px;
+    margin-bottom : 80px;
+}
+
+.roundImage
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #d3d8de;
+}
+
+.editButton
+{
+    position: absolute;
+    width: 100%;
+    bottom: -16%;
+    /* background: white; */
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    /* border: 1px solid #d3d8de; */
+}
+
+.editButton i
+{
+    background: white;
+    border-radius: 50%;
+    padding: 6px;
+    color: #0067db;
+    border: 1px solid #d3d8de;
+}
+
+.upperStats
+{
+    background-color: #fff;
+    border: 1px solid #d3d8de;
+    padding: 26px 10px 36px 15px;
+}
+
+.infoText
+{
+    justify-content: space-between;
+    margin: 10px 0 8px;
+    line-height: 1.31rem;
+    color: #5e6d77;
+    font-size: .87rem;
+}
+
+.smallHD
+{
+    font-weight: bold;
+    margin-top : 10px;
+    display: block;
+}
+
+.drow
+{
+    margin-top : 10px;
+}
+
+.trow
+{
+    margin-top : 15px;
+}
+
+.vertext i
+{
+    color : #21c44a;
+}
+
+.vertext
+{
+    float: right;
+    margin-top: -8px;
+}
+
+.google-box button
+{
+    margin-top : 15px;
+    box-shadow: 0 0 5px 3px #eee;
+}
+
+.facebook-box button
+{
+    box-shadow: 0 0 5px 3px #eee;
+}
+
+.viewProfile
+{
+    background-color: #fff;
+    border: 1px solid #d3d8de;
+    margin-bottom: 20px;
+    min-height: 50px;
+    padding: 30px 15px;
+    margin-top: 20px;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.viewprof
+{
+
+    background-color: #fff;
+    border-color: #d3d8de;
+    color: #0067db;
+    /* text-shadow: none; */
+    border: 1px solid #d3d8de;
+    white-space: nowrap;
+    border-radius: 100px;
+    padding: 11px 32px;
+    font-size: 1rem;
+}
+
+.viewprof:hover
+{
+    border-color: #0067db;
+    text-decoration: none;
+}
+
+.largeIcon i
+{
+    font-size: 80px;
+    color : #0067db;
+}
+
+.listStyle
+{
+    text-align: left;
+    margin-top : 15px;
+    margin-bottom : 15px;
+    position: relative;
+    min-height : 30px;
+}
+
+.numBoxes
+{
+    border: 2px solid #0067db;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 28px;
+    color: #0067db;
+    display: inline-block;
+    margin-right: 10px;
+    position: absolute;
+    left: 5px;
+
+}
+
+.textFl
+{
+    left: 40px;
+    position: absolute;
+    top: 3px;
+}
+
+.smallImage
+{
+    margin-left: -10%;
+    width: 120%;
+}
+
+
+.remM
+{
+    padding-bottom: 0px;
+}
+
+.movetop
+{
+    margin-top : 50px;
+}
+
+.upperStatsLeft
+{
+    border: 1px solid #d3d8de;
+    padding: 20px;
+}
+
+
+.oth{
+    font-size: 13px;
+}
+
+.viewprof2
+{
+
+    background-color: #fff;
+    border-color: #d3d8de;
+    color: #0067db;
+    /* text-shadow: none; */
+    border: 1px solid #d3d8de;
+    white-space: nowrap;
+    border-radius: 100px;
+    padding: 11px 32px;
+    font-size: 1rem;
+    max-width: 250px;
+    text-align: center;
+    margin-top : 30px;
+    border-radius: 100px;
+    background-color: #0067db;
+    border-color: #0067db;
+    color: #fff;
+    text-shadow: none;
+    -webkit-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+    line-height: 24px;
+    box-shadow: none;
+}
+
+.section-header
+{
+    font-weight: bold;
+}
+
+.uploadSelect
+{
+    display: none !important;
+    opacity: 0 !important;
+}
+
+.userDBName
+{
+    text-align: center;
+    padding-top: 20px;
+    /* font-size: 25px; */
+    font-weight: 700;
+    color: #323f4d;
+}
+
+.userDBName2
+{
+    color: #5e6d77;
+    text-align: center;
+}

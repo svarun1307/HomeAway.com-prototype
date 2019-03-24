@@ -1,0 +1,26 @@
+.askedat2
+{
+    width: 100%;
+    display: inline-block;
+    text-align: right;
+    font-family: Lato;
+    color: #212529;
+    font-weight: 500;
+}
+
+.usrprofile
+{
+    font-size: 20px !important;
+    cursor: pointer;
+}
+
+.sqstx
+{
+    font-family: Lato;
+    padding: 5px;
+}
+
+.askedat2
+{
+    font-style : italic;
+}

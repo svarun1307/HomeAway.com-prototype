@@ -1,0 +1,37 @@
+1) addProperty
+
+Needs login
+
+2) userDetails
+
+Needs login
+
+
+3) Image upload seperate
+
+
+4) Seller login hsould not access traveller login
+
+
+5) Change passord
+
+
+6) View Profile Page and link it to the user click in the property detail page
+
+7) baseurl
+
+8) User menus
+
+9) MAIN LIKE QUERY
+
+10) Session extension
+
+11) Footer
+
+12) HOME PAGE SLIDERS
+
+inset -35px 40px 50px 5px rgba(0,0,0,0.40)
+
+
+
+Parking,Internet,Linens Provided,No Smoking,Oven or Stove,Washer & Dryer,Lawn / Garden

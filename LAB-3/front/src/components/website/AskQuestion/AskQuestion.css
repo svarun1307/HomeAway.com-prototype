@@ -1,0 +1,63 @@
+
+.askQnModal
+{
+    font-size: 1.125rem;
+    margin: 0;
+    line-height: 1.625rem;
+    font-weight: 700;
+    font-family: Lato,Arial,Helvetica Neue,sans-serif;
+}
+
+.qnBox
+{
+    padding: 20px;
+}
+
+#msg
+{
+    margin-top : 25px;
+}
+
+.modalAlert
+{
+    margin-top: 20px;
+}
+
+.customErrorLoader
+{
+    position: fixed;
+    width: 80%;
+    left: 10%;
+    bottom: -100%;
+    z-index: 1000;
+    transition: all 0.4s;
+}
+
+.customErrorLoaderShow2
+{
+    bottom: 5% !important;
+}
+
+.customErrorLoader2
+{
+    position: fixed;
+    width: 80%;
+    left: 10%;
+    bottom: -100%;
+    z-index: 1000;
+    transition: all 0.4s;
+}
+
+.customErrorLoaderShow
+{
+    bottom: 5% !important;
+}
+
+.customErrorLoader strong 
+{
+    line-height: 38px;
+}
+.customErrorLoader2 strong 
+{
+    line-height: 38px;
+}

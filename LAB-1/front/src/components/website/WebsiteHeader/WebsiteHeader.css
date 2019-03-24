@@ -1,0 +1,100 @@
+
+
+.headerDB
+{
+    background: transparent !important;
+    font-family: 'Lato', sans-serif;
+    max-height: 76px;
+    min-height: 76px;
+    border-radius: 0px !important;
+}
+
+.headerDB *:not(i)
+{
+    font-family: 'Lato', sans-serif;
+    
+}
+
+.flagImage
+{
+    width: 30px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.headerDB .nav-link
+{
+    padding: 0px !important;
+}
+
+
+.listBoxSide
+{
+    padding-left : 15px;
+    padding-right: 15px;
+    background: transparent;
+    border: none;
+    box-shadow: none !important;
+    color : white !important;
+    cursor: pointer;
+}
+
+.listBoxSide .dropdown-toggle 
+{
+    color : white;
+}
+
+.leftIMG
+{
+    margin-left: 30px !important;
+}
+
+.customButton
+{
+    background-color: #fff;
+    color: #0067db !important;
+    border-color: #fff;
+    border-radius: 40px;
+    font-size: 14px;
+    margin: 0 15px;
+    padding: 12px 40px;
+}
+
+.btn-outline-success:not([disabled]):not(.disabled).active, .btn-outline-success:not([disabled]):not(.disabled):active, .show>.btn-outline-success.dropdown-toggle
+{
+    background-color: #fff;
+    color: #0067db !important;
+    border-color: #fff;
+}
+
+.customButton:hover
+{
+    background-color: #fff;
+    color: #0067db !important;
+    border: 1px solid #0067db;
+    border-radius: 40px;
+    font-size: 14px;
+    margin: 0 15px;
+    padding: 12px 40px;
+}
+
+
+.onlyHEADERBLACK div form li,.onlyHEADERBLACK div form li * 
+{
+    color : rgb(0, 103, 219) !important;
+}
+
+.onlyHEADERBLACK .dropdown-divider + a b
+{
+    color : black !important;
+}
+
+.onlyHEADERBLACK .customButton
+{
+    border: 1px solid #0067db;
+}
+
+.headerICONS {
+    padding-right: 10px;
+    color: #0267da;
+}

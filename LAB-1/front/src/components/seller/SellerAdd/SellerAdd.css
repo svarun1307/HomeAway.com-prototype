@@ -1,0 +1,189 @@
+body
+{
+    background: #fff;
+}
+
+.containerBox
+{
+    box-shadow: 0px 4px 3px 0px #bfbfbf;
+    position: relative;
+}
+
+.welcomeBoxText
+{
+    font-size: 18px;
+    margin-bottom : 15px;
+    margin-top : 15px;
+}
+
+.headerLabel
+{
+    margin-bottom: 0px !important;
+}
+
+Button[disabled]
+{
+    background: red;
+    display: none;
+}
+
+.inputTextForForm
+{
+    min-width: 300px !important;
+    margin-bottom: 20px !important;
+}
+
+.lessMargins
+{
+    margin-top : 20px !important;
+    margin-bottom: 10px !important;
+}
+
+.upperText
+{
+    font-family: "ffont","Roboto",Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color : rgb(50, 63, 77);
+
+}
+
+.locationBox
+{
+    padding-top : 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+
+#message-id
+{
+    font-weight: bold;
+    display: inline-block;
+    padding-right: 30px;
+    font-size: 16px;
+}
+
+.smallDesc
+{
+    color: #5e6d77;
+    font-family: Lato,Arial,Helvetica Neue,sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.imageContainer
+{
+    width : 100%;
+    border : 2px dashed #d7d8da;
+    min-height: 200px;
+    margin-top : 22px;
+    margin-bottom: 22px;
+    text-align: center;
+    position: relative;
+}
+
+.photoHeaderBox
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    background: white;
+    padding: 25px;
+    color: #3f51b5;
+    border-radius: 2px;
+    box-shadow: 0px 3px 1px 0px #f7f7f8;
+    font-weight: bold;
+    border : 1px solid #d7d8da;
+}
+
+
+
+.photoHeaderBox:hover
+{
+    background: #3f51b5;
+    color : white;
+}
+
+.bottomText
+{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+
+.mainDates
+{
+    padding-top : 20px;
+    padding-bottom: 20px;
+}
+
+.uploadSelect
+{
+    display: none !important;
+    opacity: 0 !important;
+}
+
+.pricingBox
+{
+    padding-top : 30px;
+    padding-bottom: 30px;
+}
+
+.successMessageBox
+{
+    position: absolute;
+    /*bottom: 100px;*/
+    width: 100%;
+    text-align: center;
+    background: white;
+    height: 100%;
+    left: 0px;
+}
+
+.successMessageBox
+{
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    width: 100%;
+}
+
+.successMessageBox i 
+{
+    font-size: 150px;
+    color : #3f51b5;   
+}
+
+#myDiv {
+    /*display: none;*/
+    text-align: center;
+  }
+
+  .animate-bottom {
+     
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)" } 
+    to { bottom:0px; opacity:1; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)" }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)" } 
+    to{ bottom:0; opacity:1; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)" }
+  }

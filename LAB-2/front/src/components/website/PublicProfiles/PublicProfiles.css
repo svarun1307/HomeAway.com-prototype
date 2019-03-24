@@ -1,0 +1,58 @@
+.profileImage
+{
+    height: 180px;
+    width : 180px;
+    border-radius: 50%;
+}
+
+.actorsDiv
+{
+    padding-top : 130px;
+    padding-bottom: 130px;
+}
+
+.intro 
+{
+    color: #353e44;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 38px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+}
+
+.memberSince
+{
+    color: #72787c;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.aboutme h3 
+{
+    font-family: 'Lato','Roboto','Arial','Helvetica Neue',Helvetica,sans-serif;
+    font-weight: 700;
+    margin-top : 50px;
+}
+
+.userINDValues
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.userINDValues div:nth-child(1)
+{
+    width: 30%;
+    font-weight: 500;
+    font-family: 'Roboto','Arial','Helvetica Neue',Helvetica,sans-serif;
+}
+
+.userINDValues div:nth-child(2)
+{
+    font-family: Lato, Roboto !important;
+    font-size: 16px;
+    color: #353e44;
+    font-weight: 300;
+}
