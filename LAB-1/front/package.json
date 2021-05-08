@@ -6,7 +6,7 @@
     "@material-ui/core": "^3.0.3",
     "@material-ui/icons": "^3.0.1",
     "axios": "^0.18.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "react": "^16.5.1",
     "react-cookie": "^3.0.4",
     "react-cookies": "^0.1.0",
