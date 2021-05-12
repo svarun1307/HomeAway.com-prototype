@@ -33,7 +33,7 @@
     "glob": "^7.1.2",
     "images-upload-middleware": "^1.1.1",
     "mongodb-autoincrement": "^1.0.1",
-    "nodemailer": "^4.6.4",
+    "nodemailer": "^6.4.16",
     "passport-local": "^1.0.0",
     "uuidv4": "^1.0.0"
   },
