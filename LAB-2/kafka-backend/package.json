@@ -27,7 +27,7 @@
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
     "uuid": "^3.3.2",
-    "validator": "^10.7.1",
+    "validator": "^13.7.0",
     "bcrypt-nodejs": "0.0.3",
     "formidable": "^1.1.1",
     "glob": "^7.1.2",
